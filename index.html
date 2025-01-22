@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="description" content="My first website">
+        <meta name="keywords" content="INFO1601, uwi, web">
+        <title>My First Page</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>This is my first website</h1>
+        </header>
+        
+        <article>
+            <section>
+                <h2>Welcome</h2>
+            </section>
+            
+            <section>
+                <figure>
+                    <img src="https://placecats.com/300/200" alt="a random cat">
+                    <figcaption>Fig 1. A random cat</figcaption>
+                </figure>
+            </section>
+
+            <section>
+                <details>
+                    <summary>Hobbies</summary>
+                    <ul>
+                    <li>Gaming</li>
+                    <li>Coding</li>
+                    <li>Eating Pizza</li>
+                    <li>Watching Netflix</li>
+                </ul>
+                </details>
+            </section>
+            <dialog id="mydialog">
+                This is a dialong
+                <a href="javascript:mydialog.removeAttribute('open')">close</a>
+            </dialog>
+
+            <a href="javascript:document.querySelector('#mydialog').setAttribute('open', true)">Open Dialog</a>
+        </article>
+        
+    </body>
+</html>
